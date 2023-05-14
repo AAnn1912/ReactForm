@@ -106,7 +106,7 @@ export default function Form() {
     resForm();
   };
   let lock = false;
-  if (id === idEdit && id !== "") {
+  if (idEdit === id && id !== "") {
     lock = true;
   }
   console.log(lock);
