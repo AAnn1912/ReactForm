@@ -98,6 +98,11 @@ export default function Form() {
     ) {
       dispatch(createForm({ id, name, phone, email }));
       resForm();
+    } else {
+      setErrorId("Mã sinh viên phải là số và không được để trống");
+      setErrorName("Tên phải là tý tự và không được để trống");
+      setErrorPhone("Số điện thoại phải là số và không được để trống");
+      setErrorEmail("Email phải đúng định dạng và không được bỏ trống");
     }
   };
   let handleUpdate = () => {
